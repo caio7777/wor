@@ -1,9 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>git and github</title>
+    <style>
+      p {
+        text-align: center;
+        font-size: 20px;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h1 style="text-align: center">
+      Entendendo a diferença dos estágios do git
+    </h1>
+    <p>
+      Para começar é bom entender quando um arquivo está:
+      <strong>untracked/tracked/modified. </strong>
+      <br />
+      <br /><strong>Untracked</strong><br />
+      É o estado que se encontra o arquivo, que está no work diretory mas não
+      está sendo trakeado ou seja rastreado pelo git. <br />
+    </p>
+    <p>
+      <br /><strong>tracked</strong><br />
+
+      Este estado é onde ele se encontra rastreado para nosso repositorio local,
+      seu sub-objetivo e ser commitado(a) para que assim possa cumprir com o
+      objetivo final que e onde todas as mudanças foram commitadas e e por fim
+      foram enviadas/sincronizadas com as informaçoes do repositorio remoto!
+    </p>
+    <p>
+      <br /><strong>modified</strong><br />
+
+      por exemplo: untraked => /antes do estaged... tracked => /quando em
+      staged... modfied => Então uma observação que eu pude fazer é que, um
+      arquivo modified, é tanto tracked quanto modfied pois para estar modified
+      ele precisa está tracked...
+      <br />
+    </p>
+    <img style="margin: 0 auto" src="./OIP.jpg" alt="" width="50%" />
+  </body>
 </html>
