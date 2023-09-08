@@ -1,0 +1,30 @@
+9. Git revert
+Às vezes, precisamos desfazer as alterações que fizemos. Existem várias maneiras de 
+se desfazer as alterações em nosso espaço de trabalho local ou remotamente 
+(dependendo do que você necessita), mas devemos usar esses comandos com cuidado 
+para evitar exclusões indesejadas.
+
+Uma maneira segura de desfazer nossos commits é usando git revert. Para ver nosso 
+histórico de commits, primeiro, precisamos usar git log -- oneline:
+
+resim
+Histórico de commits da minha branch master
+Em seguida, precisamos apenas especificar o código hash ao lado do commit que desejamos desfazer:
+
+git revert 3321844
+Depois disso, você verá uma tela igual ao que vemos abaixo - basta pressionar shift +
+q para sair:
+
+resim-2
+O comando git revert desfará o commit especificado, mas criará outro commit sem 
+excluir o antigo:
+
+resim-3
+Novo commit do "revert"
+A vantagem de se usar git revert é não tocar no histórico de commits. Isso significa que você ainda pode ver todos os commits do seu histórico, mesmo os revertidos.
+
+Outra medida de segurança está no fato de que tudo acontece em nosso sistema local, a menos que façamos o push de tudo para o repositório remoto. É por isso que o uso de git revert é mais seguro e é a forma preferida de desfazer nossos commits.
+
+este link tem explicaçao de 10 comandos git
+
+https://www.freecodecamp.org/portuguese/news/10-comandos-do-git-que-todo-desenvolvedor-deveria-conhecer/
